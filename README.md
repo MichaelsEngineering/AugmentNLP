@@ -22,15 +22,18 @@ AugmentNLP is a comprehensive toolkit for mastering Natural Language Processing 
 ## Installation
 
 1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/AugmentNLP.git
+
+   ```bash
+   gh repo clone MichaelsEngineering/AugmentNLP
    cd AugmentNLP
    ```
 
-2. Install the required dependencies:
-   ```
+2. Create an env and install the required dependencies:
+
+   ```bash
    pip install -r requirements.txt
    ```
+
 ## Usage
 
 ### Augment with Synonyms
@@ -39,22 +42,24 @@ To augment text using synonyms:
 
 1. Place your input text file in the `data` directory (e.g., `data/model_response.txt`).
 2. Run the augmentation script:
-   ```
+
+   ```bash
    python src/augment_with_synonyms.py
    ```
+
 3. The augmented text will be saved in `data/synonym_augmented_model_response.txt`.
 
 ### Running Tests
 
 To run the unit tests:
 
-```
+```bash
 python -m unittest tests/test_augment_with_synonyms.py
 ```
 
 ## Project Structure
 
-```
+```text
 AugmentNLP/
 ├── src/
 │   └── augment_with_synonyms.py
